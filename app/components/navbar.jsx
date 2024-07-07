@@ -48,7 +48,7 @@ const Navbar = () => {
     <>
       <nav
         ref={navbarRef}
-        className="mx-auto lg:px-20 fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pt-8 backdrop-blur-2xl"
+        className="mx-auto lg:px-20 fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 pt-8 glass"
       >
         <div className="container md:w-[90%] mx-auto flex justify-around items-center">
           <div className="text-white text-lg font-bold">
