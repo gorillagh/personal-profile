@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Open Sans", "sans-serif"],
+        serif: ["Merriweather", "serif"],
+      },
+      colors: {
+        primary: "#072536",
+        secondary: "#85181B",
+        accent: "#B37E4C",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
