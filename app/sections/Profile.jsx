@@ -2,15 +2,15 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div className="my-20 container mx-auto p-8 bg-white border border-gray-200 rounded-lg shadow-lg">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-primary text-center mb-8">
+    <div className="container mx-auto my-20 rounded-lg border border-gray-200 bg-white p-8 shadow-lg">
+      <h1 className="mb-8 text-center font-serif text-3xl font-bold text-primary sm:text-4xl md:text-5xl">
         PROFILE
       </h1>
       <section className="mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent mb-4">
+        <h2 className="mb-4 text-xl font-semibold text-accent sm:text-2xl md:text-3xl">
           Introduction
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl font-sans text-gray-700 text-justify leading-relaxed">
+        <p className="text-justify font-sans text-lg leading-relaxed text-gray-700 sm:text-xl md:text-2xl">
           Kabu Nartey has been described by one of Ghana’s media as “One of
           Ghana’s fast rising young leaders” with multiple awards in leadership,
           communication, law and legal advocacy. He is ranked among 50 most
@@ -20,10 +20,10 @@ const Profile = () => {
         </p>
       </section>
       <section className="mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent mb-4">
+        <h2 className="mb-4 text-xl font-semibold text-accent sm:text-2xl md:text-3xl">
           Leadership and Activism
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl font-sans text-gray-700 text-justify leading-relaxed">
+        <p className="text-justify font-sans text-lg leading-relaxed text-gray-700 sm:text-xl md:text-2xl">
           In Leadership and Activism, Kabu Nartey has served in many positions
           and exhibited stellar prowess and results including the Director of
           the Ghana University Debate Association (GUDA) from 2016-2017;
@@ -48,10 +48,10 @@ const Profile = () => {
         </p>
       </section>
       <section className="mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent mb-4">
+        <h2 className="mb-4 text-xl font-semibold text-accent sm:text-2xl md:text-3xl">
           Communication and Journalism
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl font-sans text-gray-700 text-justify leading-relaxed">
+        <p className="text-justify font-sans text-lg leading-relaxed text-gray-700 sm:text-xl md:text-2xl">
           In Communication and Journalism, Kabu Nartey has authored over 200
           socio-economic and political articles, features, commentaries and
           patriotic opinions published on leading media outlets including
@@ -78,10 +78,10 @@ const Profile = () => {
         </p>
       </section>
       <section className="mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent mb-4">
+        <h2 className="mb-4 text-xl font-semibold text-accent sm:text-2xl md:text-3xl">
           Law and Legal Advocacy
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl font-sans text-gray-700 text-justify leading-relaxed">
+        <p className="text-justify font-sans text-lg leading-relaxed text-gray-700 sm:text-xl md:text-2xl">
           In Law and Legal Advocacy, Kabu Nartey traces his oratory skills to
           his formative years in public speaking and debate where he represented
           and won a number of national and international awards for his alma
@@ -103,7 +103,7 @@ const Profile = () => {
           honourary mention made by the Vice Chancellor of the University of
           Ghana Professor Nana Aba Appiah Amfo at the 2023 Special Congregation.
         </p>
-        <p className="text-lg sm:text-xl md:text-2xl font-sans text-gray-700 text-justify leading-relaxed">
+        <p className="text-justify font-sans text-lg leading-relaxed text-gray-700 sm:text-xl md:text-2xl">
           Kabu Nartey is privileged to be an acknowledged proof-reader of one of
           Ghana’s foremost legal luminaries, Prof E.K Abotsi’ Constitutional law
           book, Constitutional law of Ghana; Texts, Commentary and Case law. The
@@ -142,10 +142,10 @@ const Profile = () => {
         </p>
       </section>{" "}
       <section className="mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent mb-4">
+        <h2 className="mb-4 text-xl font-semibold text-accent sm:text-2xl md:text-3xl">
           Education
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl font-sans text-gray-700 text-justify leading-relaxed">
+        <p className="text-justify font-sans text-lg leading-relaxed text-gray-700 sm:text-xl md:text-2xl">
           Kabu Nartey attended Aggrey Memorial International School in Kanda
           where he was the Head Prefect. He had his secondary education at the
           Winneba Senior High School where he was the Boys Prefect (Academics).
@@ -163,10 +163,10 @@ const Profile = () => {
         </p>
       </section>
       <section className="mb-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent mb-4">
+        <h2 className="mb-4 text-xl font-semibold text-accent sm:text-2xl md:text-3xl">
           Conferences and Debates
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl font-sans text-gray-700 text-justify leading-relaxed">
+        <p className="text-justify font-sans text-lg leading-relaxed text-gray-700 sm:text-xl md:text-2xl">
           The budding lawyer has attended a number of conferences on literature,
           law, governance and politics across the continent and in Europe
           including South Africa, Rwanda, US, Italy among others. He has also

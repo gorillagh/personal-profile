@@ -1,17 +1,17 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 const BackToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
 
-  const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400) {
+  const checkScrollTop = useCallback(() => {
+    if (window.pageYOffset > 400) {
       setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 400) {
+    } else {
       setShowScroll(false);
     }
-  };
+  }, []);
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -22,11 +22,11 @@ const BackToTop = () => {
     return () => {
       window.removeEventListener("scroll", checkScrollTop);
     };
-  }, [showScroll]);
+  }, [checkScrollTop, showScroll]);
 
   return (
     <button
-      className={`fixed bottom-10 right-10 bg-primary text-white p-3 rounded-full shadow-lg ${
+      className={`fixed bottom-10 right-10 rounded-full bg-primary p-3 text-white shadow-lg ${
         showScroll ? "block" : "hidden"
       }`}
       onClick={scrollTop}

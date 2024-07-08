@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-5">
       <Hero />
-      <div className="md:w-[80%] mx-auto">
+      <div className="mx-auto md:w-4/5">
         <Profile />
       </div>
       <BackToTop />

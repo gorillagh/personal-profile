@@ -48,10 +48,10 @@ const Navbar = () => {
     <>
       <nav
         ref={navbarRef}
-        className="mx-auto lg:px-20 fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 pt-8 glass"
+        className="glass fixed left-0 top-0 mx-auto flex w-full justify-center border-b border-gray-300 pt-8 lg:px-20"
       >
-        <div className="container md:w-[90%] mx-auto flex justify-around items-center">
-          <div className="text-white text-lg font-bold">
+        <div className="container mx-auto flex items-center justify-around md:w-[90%]">
+          <div className="text-lg font-bold text-white">
             <Link href="/">
               <Image
                 src={logo}
@@ -62,15 +62,16 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="hidden md:flex flex justify-around items-center w-[50%]">
+          {/* // eslint-disable-next-line tailwindcss/no-contradicting-classname */}
+          <div className="hidden w-1/2 items-center justify-around md:flex">
             <button
-              className="rounded-2xl text-sm font-semibold border-2 border-primary p-4 text-primary hover:bg-primary hover:text-white hover:border-white"
+              className="rounded-2xl border-2 border-primary p-4 text-sm font-semibold text-primary hover:border-white hover:bg-primary hover:text-white"
               onClick={scrollToFooter}
             >
               Download Profile
             </button>
             <button
-              className="text-primary font-semibold text-sm block mt-4 lg:inline-block lg:mt-0 hover:text-secondary"
+              className="mt-4 block text-sm font-semibold text-primary hover:text-secondary lg:mt-0 lg:inline-block"
               onClick={scrollToFooter}
             >
               Get In Touch
@@ -81,7 +82,7 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="text-primary focus:outline-none"
             >
-              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <svg className="size-6 fill-current" viewBox="0 0 24 24">
                 {isOpen ? (
                   <path
                     fillRule="evenodd"
@@ -99,19 +100,20 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className={`fixed top-0 right-0 w-[80%] bg-white shadow-lg transform transition-transform ease-in-out duration-300 ${
+            // eslint-disable-next-line tailwindcss/migration-from-tailwind-2
+            className={`fixed right-0 top-0 w-4/5 transform bg-white shadow-lg transition-transform duration-300 ease-in-out ${
               isOpen ? "translate-x-0" : "translate-x-full"
             } z-50 lg:hidden`}
           >
-            <div className="flex flex-col h-full justify-center items-center py-8">
+            <div className="flex h-full flex-col items-center justify-center py-8">
               <button
-                className="rounded-2xl text-sm font-semibold border-2 border-primary p-4 text-primary hover:bg-primary hover:text-white hover:border-white mb-4"
+                className="mb-4 rounded-2xl border-2 border-primary p-4 text-sm font-semibold text-primary hover:border-white hover:bg-primary hover:text-white"
                 onClick={scrollToFooter}
               >
                 Download Profile
               </button>
               <button
-                className="text-primary font-semibold text-sm block mt-4 lg:inline-block lg:mt-0 hover:text-secondary"
+                className="mt-4 block text-sm font-semibold text-primary hover:text-secondary lg:mt-0 lg:inline-block"
                 onClick={scrollToFooter}
               >
                 Get In Touch
