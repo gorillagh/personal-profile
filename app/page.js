@@ -4,7 +4,7 @@ import Profile from "./sections/Profile";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-5">
+    <main className="flex min-h-screen flex-col items-center justify-between ">
       <Hero />
       <div className="mx-auto md:w-4/5">
         <Profile />
